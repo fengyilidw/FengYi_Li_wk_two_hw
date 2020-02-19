@@ -29,7 +29,7 @@
 
         
             <fieldset>
-                <button id="add">Click to add</button>
+                <button id="add" onclick="addNums()">Click to add</button>
                 <h3>Result</h3>
                 <span id="result">Result here</span>
             </fieldset>
@@ -56,9 +56,9 @@
     
         
             <fieldset>
-                <button id="multiply">Click to multiply</button>
+                <button id="multiply" onclick="multiplyNums()">Click to multiply</button>
                 <h3>Result</h3>
-                <span id="result">Result here</span>
+                <span id="result2">Result here</span>
             </fieldset>
         
     </div>
@@ -84,9 +84,9 @@
     
         
             <fieldset>
-                <button id="divide">Click to divide</button>
+                <button id="divide" onclick="divideNums()">Click to divide</button>
                 <h3>Result</h3>
-                <span id="result">Result here</span>
+                <span id="result3">Result here</span>
             </fieldset>
         
     </div>
@@ -97,7 +97,11 @@
     
     
     
-
+    
+    
+    
+    
+    
     <div class="form">
         
             <fieldset>
@@ -110,48 +114,57 @@
                 <label>Number 8</label>
                 <input type="text" id="num8">
             </fieldset>
+    
+        
+            <fieldset>
+                <button id="divide-fixed" onclick="divideNumsFixed()">Click to divide</button>
+                <span>(rounded off)</span>
+                <br>
+                <h3>Result</h3>
+                <span id="result4">Result here</span>
+            </fieldset>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <div class="form">
+        
+            <fieldset>
+                <label>Number 9</label>
+                <input type="text" id="num9">
+            </fieldset>
+    
+        
+            <fieldset>
+                <label>Number 10</label>
+                <input type="text" id="num10">
+            </fieldset>
         
     
             <fieldset>
-                <button id="subtract">Click to subtract</button>
+                <button id="subtract" onclick="subtractNums()">Click to subtract</button>
                 <h3>Result</h3>
-                <span id="result">Result here</span>
+                <span id="result5">Result here</span>
             </fieldset>
         
     </div>
 
 
     
-    
-    
-    
-    
-    
-    
-    
-    <div class="form">
-        
-                <fieldset>
-                    <label>Number 9</label>
-                    <input type="text" id="num9">
-                </fieldset>
-        
-        
-                <fieldset>
-                    <label>Number 10</label>
-                    <input type="text" id="num10">
-                </fieldset>
-        
-        
-                <fieldset>
-                    <button id="subtract">Click to subtract</button>
-                    <h3>Result</h3>
-                    <span id="result">Result here</span>
-                </fieldset>
-        
-    </div>
-
-
     
     
     
@@ -174,9 +187,9 @@
     
         
             <fieldset>
-                <button id="modulo">Click to modulo</button>
+                <button id="modulo" onclick="leftOver()" >Click to modulo</button>
                 <h3>Result</h3>
-                <span id="result">Remainder here</span>
+                <span id="remainder">Remainder here</span>
             </fieldset>
         
     </div>

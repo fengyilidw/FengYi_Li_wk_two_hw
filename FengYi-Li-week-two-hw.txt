@@ -1,0 +1,16 @@
+1. 
+
+const multiplyNums = () => {
+    let num3 = document.getElementById("num3").value;
+    let num4 = document.getElementById("num4").value;
+    let multiply = num3 * num4;
+    document.getElementById("result2").innerHTML = multiply;
+};
+
+What the JavaScript code do is used to dynamically change the behavior, display and interactions of a page. In this case, it let num3 and num4 be any value or numbers when we enter, then let multiply equal to num3 multiply to num4, when you click “Click to multiply”what the “multiplyNums”, the answer/result you get in result2 is the multiply of these two numbers both num3 and num4.  So num3, num 4, and results2 those are the Dom (HTML elements), they are the set of specifications to describe the elements of the page. In addition, you can set any rules in CSS to tell the browser how to display those elements such as the background color, font-size, font-family, margin and etc. 
+
+
+
+2.
+
+Go into Mathias Byen's blog post entitled Valid JavaScript variable names in ES2015, and the 3 variable names that I checked in the variable name validator are letter g, $, and _, they all are valid and passed. In addition, I know numbers !, +, and * will not be passed because 
