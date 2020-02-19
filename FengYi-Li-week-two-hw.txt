@@ -1,4 +1,7 @@
-1. 
+FengYi_Li_week_two_hw
+Part 2:
+
+1. One form of JavaScript code
 
 const multiplyNums = () => {
     let num3 = document.getElementById("num3").value;
@@ -11,6 +14,110 @@ What the JavaScript code do is used to dynamically change the behavior, display 
 
 
 
-2.
+2.var, let, const, and variable naming:
 
 Go into Mathias Byen's blog post entitled Valid JavaScript variable names in ES2015, and the 3 variable names that I checked in the variable name validator are letter g, $, and _, they all are valid and passed. In addition, I know numbers !, +, and * will not be passed because 
+
+
+
+3. let, const and var:
+• Declare and initialize a variable with var. Then re-assign the variable to
+another value.
+• Declare and initialize a variable with let. Then re-assign the variable to
+another value.
+• Declare and initialize a variable with const. Then re-assign the variable to
+another value.
+• Describe each outcome, what they were and why. Copy and paste the results to the
+Developer Tools console into your .txt file to show the outcomes. Make sure to
+console.log() everything you want to have printed to the Developer Tools Console. You
+don’t actually need to code directly into the Console as we did in class. You can
+console.log() whatever it is that you need to have show up there, inside your JavaScript
+file. This will also help you to better describe the outcomes.
+
+
+
+
+let:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="number"></p>
+
+<script>
+let i = 8;
+for (let i = 0; i < 10; i++) {
+  // some statements
+}
+document.getElementById("number").innerHTML = i;
+
+</script>
+</body>
+</html>
+
+// Here the outcome is 8
+
+
+
+
+
+var:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="number"></p>
+
+<script>
+       var  x = 10; // Here x is 10
+             {  
+             var x = 5; // Here x is 5
+             }
+             document.getElementById("number").innerHTML = x;
+</script>
+</body>
+</html>
+
+// Here the outcome is 5, no matter what number you put the outcome is the value/number that you put inside of the var which {var x = 5;}  , for this cause this number is 5. If you put the other value, the outcome will be the value you put into.  
+
+
+4. global scope vs local scope:
+Describe what it means for a variable to have global scope, and what it means for a
+variable to have local scope. Give examples using let, const, and var. Remember, global
+scope and local scope differ for let, const, and var.
+
+Global Scope-When a variable is declared outside of a function, or without the var keyword then it will become Global and will be accessible from anywhere. 
+For example:
+            var number = 1;
+            function local() {
+            console.log(number); // Here 1 gets printed
+            }
+            console.log(number); // Here 1 gets printed
+
+
+Function (Local) Scope-When a variable is defined inside a function, it will be local only for that function and can’t be used outside. So if the variable statement occurs inside a FunctionDeclaration, the variables are defined with function-local scope in that function. This means is if you create a variable with var, that variable is “scoped” to the function it was created in and is only accessible inside of that function or, any nested functions.
+For example:
+            function local() {
+            var number = 1;
+            console.log(number); // Here 1 gets printed 
+            }
+            console.log(number); // Here outcome will be undefined
+            
+
+
+In addtion, let is the block scoped, it can be used instead of var, it will referenceError when accessing a variable before it's declared. So it doesn’t allow redeclaration, but can be reassigned later. 
+
+const is the block scoped, it can also be used instead of var, it must be assigned once it has declared, it will referenceError when accessing a variable before it's declared and it doesn’t allow redeclaration or reassignment.
+
+var supports function & global scope, but not block scope, it will undefined when accessing a variable before it's declared. 
+
+
+
+
+
+
+
+
+
