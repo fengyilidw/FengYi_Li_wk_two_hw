@@ -3,6 +3,68 @@ Part 2:
 
 1. One form of JavaScript code
 
+
+THIS IS HTML:
+    <div class="form"> 
+            <fieldset>
+                <label>Number 3</label>
+                <input type="text" id="num3">
+            </fieldset>
+    
+        
+            <fieldset>
+                <label>Number 4</label>
+                <input type="text" id="num4">
+            </fieldset>
+    
+        
+            <fieldset>
+                <button id="multiply" onclick="multiplyNums()">Click to multiply</button>
+                <h3>Result</h3>
+                <span id="result2">Result here</span>
+            </fieldset>      
+    </div>
+    
+    
+    
+THIS IS css:
+.form{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+    padding:20px;
+    border: 0.5px solid black;
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+
+fieldset{
+    background-color:aliceblue;
+    }
+
+input{
+    text-align: center;
+    margin: 5px 1px;
+     }
+
+input:hover{
+    border: 2px solid dodgerblue;
+    }
+
+button{
+    padding: 9px;
+    background-color:dodgerblue;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 1px;
+       }
+
+button:hover{color: yellow;
+            }
+
+
+THIS IS JavaScript:
 const multiplyNums = () => {
     let num3 = document.getElementById("num3").value;
     let num4 = document.getElementById("num4").value;
@@ -10,83 +72,106 @@ const multiplyNums = () => {
     document.getElementById("result2").innerHTML = multiply;
 };
 
-What the JavaScript code do is used to dynamically change the behavior, display and interactions of a page. In this case, it let num3 and num4 be any value or numbers when we enter, then let multiply equal to num3 multiply to num4, when you click “Click to multiply”what the “multiplyNums”, the answer/result you get in result2 is the multiply of these two numbers both num3 and num4.  So num3, num 4, and results2 those are the Dom (HTML elements), they are the set of specifications to describe the elements of the page. In addition, you can set any rules in CSS to tell the browser how to display those elements such as the background color, font-size, font-family, margin and etc. 
+
+HTML: HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, data tables, and etc in the page.
+
+<form>: it used for creating a form for user input. A form can contain textfields, checkboxes,           radio-buttons and more. Forms are used to pass user-data to a specified URL.
+<fieldset>: it is used to group related elements in a form and it draws a box around the related            elements.
+<label>: it defines a text label for the <input> tag. The label is an ordinary text, by clicking          which, the user can select the form element. It facilitates the use of the form, since          it is not always convenient to get into form elements with the cursor.
+<button>: it represents a clickable button, used to submit forms or anywhere in a document for             accessible, standard button functionality. 
+<input>: it specifies an input field where the user can enter data. 
+<span>: it is generic inline container for phrasing content, which has no default rendering or           meaning. 
+
+
+CSS: CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out the content in multiple columns.
+
+.form: change the font to Helvetica and the background-color to white in the form block element,        and give some styles to the border such as boder color to be black, and add some spade by           using margin and padding.
+fieldset: give background-color:aliceblue.
+button: change the style of the default button such as background-color,font-size and etc.
+button:hover: change the color to yellow of the hover for the button.
+input: center the entered text, and add some spade to the input.
+input:hover: change the color of the hover for the input.
+
+
+JavaScript: it is a scripting language that enables to create dynamically updating content, control multimedia, animate images, and pretty much everything else.
+
+const: it is the block scoped, it can also be used instead of var, it must be assigned once it has declared, it will referenceError when accessing a variable before it's declared and it doesn’t allow redeclaration or reassignment.
+
+multiplyNums(): When one class extends more than one classes then this is called multiple inheritance. 
+
+=>: The left size part of the arrow function represents the input of the function and the right size part is the output of the function.
+
+let: it allows you to declare variables that are limited to a scope of a block statement, or expression on which it is used, unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.
+
+getElementById(): it is a DOM method used to return the element that has the ID attribute with the specified value. This is one of the most common methods in the HTML DOM and is used almost every time we want to manipulate an element on our document. This method returns null if no elements with the specified ID exists.
+
+.value: it is the value attribute inherent in the input.tag.
+
+innerHTML: change the content of the innerHTML of the span element from “Result here” to the product of the multiplyNums function.
+
+
+Finally, what the JavaScript code do is used to dynamically change the behavior, display and interactions of a page. In this case, it let num3 and num4 be any value or number when we enter, then let multiply equal to num3 multiply to num4, when you click “Click to multiply”what the “multiplyNums”, the answer/result you get in result2 is the multiply of these two numbers both num3 and num4.  So num3, num 4, and results2 those are the Dom (HTML elements), they are the set of specifications to describe the elements of the page. In addition, you can set any rules in CSS to tell the browser how to display those elements such as the background color, font-size, font-family, margin and etc. 
 
 
 
 2.var, let, const, and variable naming:
 
-Go into Mathias Byen's blog post entitled Valid JavaScript variable names in ES2015, and the 3 variable names that I checked in the variable name validator are letter g, $, and _, they all are valid and passed. In addition, I know numbers !, +, and * will not be passed because 
+Go into Mathias Byen's blog post entitled Valid JavaScript variable names in ES2015, and the 3 variable names that I checked in the variable name validator are letter unable, $20, and _2020, they all are valid and passed. In addition, I know numbers, !, @, %, ^, &, #, +, and * will not be passed because a variable name should begin with the letters, dollar sign or underscore.
 
 
+3. var, let, and const:
 
-3. let, const and var:
 • Declare and initialize a variable with var. Then re-assign the variable to
 another value.
+
+var banana = 10; 
+console.log(age);
+10
+undefined
+The variable banana equals to 10. The printed message 10 displayed to the user.
+
+var y = 5 + 4 + 1;
+console.log(y);
+9
+undefined
+Variables in JavaScript can evaluate simple mathematical expressions and assume its value.
+
+
 • Declare and initialize a variable with let. Then re-assign the variable to
 another value.
+
+let z = 7; 
+console.log(z);
+7
+undefined
+The variable z equals to 7. The printed message 7 displayed to the user.
+
+let fruit= 'apple'; 
+console.log(fruit);
+apple
+undefined
+The variable fruit equals to apple. The printed message apple displayed to the user.
+
+
 • Declare and initialize a variable with const. Then re-assign the variable to
 another value.
-• Describe each outcome, what they were and why. Copy and paste the results to the
-Developer Tools console into your .txt file to show the outcomes. Make sure to
-console.log() everything you want to have printed to the Developer Tools Console. You
-don’t actually need to code directly into the Console as we did in class. You can
-console.log() whatever it is that you need to have show up there, inside your JavaScript
-file. This will also help you to better describe the outcomes.
+
+const vegetable = {};
+vegetable.name = 'corn';
+"corn"
+It’s not allowed to change the value of a variable declared with const. But if declare an object as const, it will be able to change the properties.
+
+const pet='dog'; 
+console.log(pet);
+god
+undefined
+The variable pet equals to dig. The printed message dog displayed to the user.
 
 
-
-
-let:
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<p id="number"></p>
-
-<script>
-let i = 8;
-for (let i = 0; i < 10; i++) {
-  // some statements
-}
-document.getElementById("number").innerHTML = i;
-
-</script>
-</body>
-</html>
-
-// Here the outcome is 8
-
-
-
-
-
-var:
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<p id="number"></p>
-
-<script>
-       var  x = 10; // Here x is 10
-             {  
-             var x = 5; // Here x is 5
-             }
-             document.getElementById("number").innerHTML = x;
-</script>
-</body>
-</html>
-
-// Here the outcome is 5, no matter what number you put the outcome is the value/number that you put inside of the var which {var x = 5;}  , for this cause this number is 5. If you put the other value, the outcome will be the value you put into.  
+Finally, var will undefined when accessing a variable before it's declared. let it will referenceError when accessing a variable before it's declared. So it doesn’t allow redeclaration, but can be reassigned later. const must be assigned once it has declared, it will referenceError when accessing a variable before it's declared and it doesn’t allow redeclaration or reassignment.
 
 
 4. global scope vs local scope:
-Describe what it means for a variable to have global scope, and what it means for a
-variable to have local scope. Give examples using let, const, and var. Remember, global
-scope and local scope differ for let, const, and var.
 
 Global Scope-When a variable is declared outside of a function, or without the var keyword then it will become Global and will be accessible from anywhere. 
 For example:
