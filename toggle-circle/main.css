@@ -1,0 +1,48 @@
+body{background-color: lightskyblue;}
+
+.change-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  height: 350px;
+  width: 350px;
+  }
+
+.change-color {
+  background-color: chartreuse; 
+  border-radius: 100%; 
+  margin-top:50px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top:50px;
+  }
+
+.btn-change{
+   
+    width: 49%;
+    padding: 9px;
+    background-color:dodgerblue;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 1px;
+}
+.btn-change:hover{color: yellow;
+}
+
+.btn-clear {
+    width: 49%;
+    padding: 9px;
+    background-color:dodgerblue;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 1px;
+}
+
+.btn-clear:hover{color: yellow;
+}
+ 
